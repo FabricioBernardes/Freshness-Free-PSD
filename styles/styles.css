@@ -203,6 +203,9 @@ a {
         align-items: center;
         width: unset;
     }
+    #slider {
+        height: 400px;
+    }
     .slide-left {
         display: none;
     }
