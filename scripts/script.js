@@ -5,7 +5,7 @@ var y=0;
 
 function slideLoop (){
     y++;
-    if (y>4){
+    if (y>selectslides.length-1){
         y=0;
     }
     changeSlide (y);
