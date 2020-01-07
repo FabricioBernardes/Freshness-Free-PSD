@@ -19,18 +19,11 @@ function clickDot (n) {
 }
 
 function changeSlide (y) {
-    selectslides[0].classList.remove("show-slide");
-    selectslides[1].classList.remove("show-slide");
-    selectslides[2].classList.remove("show-slide");
-    selectslides[3].classList.remove("show-slide");
-    selectslides[4].classList.remove("show-slide");
+    for (var i=0; i<selectslides.length; i++){
+    selectslides[i].classList.remove("show-slide");
+    selectdots[i].classList.remove("dot-click");
+    }
     selectslides[y].classList.add("show-slide");
-
-    selectdots[0].classList.remove("dot-click");
-    selectdots[1].classList.remove("dot-click");
-    selectdots[2].classList.remove("dot-click");
-    selectdots[3].classList.remove("dot-click");
-    selectdots[4].classList.remove("dot-click");
     selectdots[y].classList.add("dot-click");
 }
 
