@@ -1,3 +1,28 @@
+/*-------------Hamburguer menu-------------------*/
+var getMenu = document.getElementById("nav-menu");
+var media = window.matchMedia("(max-width: 660px)");
+
+function myFunction(media) {
+    if (media.matches) {
+        getMenu.style.display = "none";        
+    } 
+    else {
+        getMenu.style.display = "flex";
+    }
+}
+
+function navMenu() {
+    if (getMenu.style.display === "flex") {
+        getMenu.style.display = "none";
+    } else {
+        getMenu.style.display = "flex";
+    }
+}
+
+myFunction(media);
+media.addListener(myFunction);
+
+/*-------------Slider-------------------*/
 var selectslides=document.querySelectorAll("#slider > .hide-slide");
 var selectdots=document.querySelectorAll("#dots-container > span");
 var timer=setInterval (slideLoop, 3000);
